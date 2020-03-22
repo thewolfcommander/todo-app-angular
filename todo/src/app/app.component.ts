@@ -6,7 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'todo';
+  data : AppData = {
+    todos: [
+      {
+        title: 'Eat Food',
+        completed: true,
+      },
+      {
+        title: 'Feed Simmu',
+        completed: false,
+      },
+    ]
+  };
 }
 
 export interface Todo {
@@ -17,3 +28,4 @@ export interface Todo {
 export interface AppData {
   todos: Array<Todo>;
 }
+
