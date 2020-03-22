@@ -8,3 +8,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'todo';
 }
+
+export interface Todo {
+  title: string;
+  completed: boolean;
+}
+
+export interface AppData {
+  todos: Array<Todo>;
+}

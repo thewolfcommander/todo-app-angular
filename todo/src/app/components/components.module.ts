@@ -6,6 +6,7 @@ import { AddTodoComponent } from './add-todo/add-todo.component';
 
 @NgModule({
   declarations: [AddTodoComponent],
+  exports: [AddTodoComponent],
   imports: [
     CommonModule
   ]
