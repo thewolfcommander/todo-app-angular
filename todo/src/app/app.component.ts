@@ -18,6 +18,13 @@ export class AppComponent {
       },
     ]
   };
+
+  addTodo(todo) {
+    this.data.todos.push({
+      title: todo,
+      completed: false,
+    });
+  };
 }
 
 export interface Todo {

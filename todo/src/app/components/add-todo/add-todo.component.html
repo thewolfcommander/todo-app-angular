@@ -1,1 +1,1 @@
-<input #newTodo type="text" name="add-todo" id="" placeholder="Add a new TO-DO..." (keyup.enter) = "addTodo(newTodo.value)">
+<input #newTodo type="text" name="add-todo" id="" placeholder="Add a new TO-DO..." (keyup.enter) = "addTodo(newTodo.value); newTodo.value='';">
